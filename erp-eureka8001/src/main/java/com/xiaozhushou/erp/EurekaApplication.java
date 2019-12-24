@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
- * @Description: TODO
+ * @Description: 注册中心8001
  * @ProjectName: xiaozhushou-erp
  * @Package: com.xiaozhushou.erp
  * @Author: HuangPeiDong
