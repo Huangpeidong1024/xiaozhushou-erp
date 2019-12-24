@@ -1,0 +1,23 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: erp-zuul
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8001/eureka/,http://127.0.0.1:8002/eureka/,http://127.0.0.1:8003/eureka/
+
+zuul:
+  prefix: /erp
+  routes:
+    course:
+      path: /erp-course/**
+      serviceId: eureka-client-homepage-course
+      strip-prefix: false
+    user:
+      path: /erp-user/**
+      serviceId: eureka-client-homepage-user
+      strip-prefix: false
